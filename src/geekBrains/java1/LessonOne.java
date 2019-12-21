@@ -23,7 +23,9 @@ public class LessonOne {
         System.out.println("-----------");
         System.out.println(LessonOne.isNegative(-1));
         System.out.println("-----------");
-        LessonOne.greetings("Vasya");
+        LessonOne.greetings("Vanya");
+        System.out.println("-----------");
+        LessonOne.isLeapYear(2000);
     }
 
     public static int calc(int a, int b, int c, int d) {
@@ -46,12 +48,27 @@ public class LessonOne {
 
     }
 
-    public static boolean isNegative(int a){
+    public static boolean isNegative(int a) {
         return a < 0;
     }
 
-    public  static void greetings(String name){
+    public static void greetings(String name) {
         System.out.println("Greetings, " + name + "!");
+    }
+
+    public static void isLeapYear(int year) {
+        boolean isLeapYear = false;
+        if (year % 4 == 0 | year % 400 == 0) {
+            isLeapYear = true;
+        }
+        if (year % 100 == 0) {
+            isLeapYear = false;
+        }
+        if (isLeapYear) {
+            System.out.println("This is leap year");
+        } else {
+            System.out.println("This is NOT leap year");
+        }
     }
 
 }
