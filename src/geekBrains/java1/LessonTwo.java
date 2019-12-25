@@ -20,6 +20,7 @@ public class LessonTwo {
         one();
         two();
         tree();
+        fourth();
 
     }
 
@@ -57,15 +58,38 @@ public class LessonTwo {
     }
 
     public static void tree() {
-        int [] arrays = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+        int[] arrays = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 
-        for(int i =0; i < arrays.length; i++){
-            if (arrays[i] < 6){
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] < 6) {
                 arrays[i] *= 2;
             }
         }
         System.out.println(Arrays.toString(arrays));
         System.out.println("-----------end three---------");
     }
+
+    public static void fourth() {
+        int[][] arrays = new int[10][10];
+
+        for (int i = 0; i < arrays.length; i++) {
+            for (int j = 0; j < arrays[i].length; j++) {
+                if (i == j) {
+                    arrays[i][j] = 1;
+                    break;
+                }
+            }
+        }
+
+
+        for (int[] array : arrays) {
+            System.out.println(Arrays.toString(array));
+
+        }
+
+
+
+        System.out.println("-----------end fourth---------");
+}
 
 }
