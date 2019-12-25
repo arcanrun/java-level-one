@@ -19,6 +19,7 @@ public class LessonTwo {
     public static void main(String[] args) {
         one();
         two();
+        tree();
 
     }
 
@@ -53,6 +54,18 @@ public class LessonTwo {
         System.out.println(Arrays.toString(arrays));
         System.out.println("-----------end two---------");
 
+    }
+
+    public static void tree() {
+        int [] arrays = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+
+        for(int i =0; i < arrays.length; i++){
+            if (arrays[i] < 6){
+                arrays[i] *= 2;
+            }
+        }
+        System.out.println(Arrays.toString(arrays));
+        System.out.println("-----------end three---------");
     }
 
 }
