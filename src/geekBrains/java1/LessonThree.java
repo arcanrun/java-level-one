@@ -10,10 +10,9 @@ public class LessonThree {
     public static void guessNumber() {
         exitGame:
         {
-
             while (true) newGame:{
                 System.out.println("Guess the number in between 0 and 9");
-                int guesedNumber = (int) (Math.random() * 10) - 1;
+                int guesedNumber = (int)(Math.random() * 10);
                 System.out.println(guesedNumber);
                 int tries = 0;
                 while (true) {
